@@ -95,7 +95,7 @@ void afiseazaAnimal(struct Animal a) {
         printf("%.2f ", a.preturiMancare[i]);
     }
     printf("\n}\n");
-}
+} 
 
 
 void elibereazaAnimal(struct Animal* a) {
