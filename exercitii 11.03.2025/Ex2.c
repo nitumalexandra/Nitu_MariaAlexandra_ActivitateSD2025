@@ -33,23 +33,23 @@ struct Animal {
 
 struct Animal citesteAnimal() {
     struct Animal a;
-    printf("Introdu codul animalului(ex:4215): ");
+    printf("Introduceti codul animalului(ex:4215): ");
     scanf("%d", &a.cod);
     getchar();
 
     char buffer[100];
-    printf("Introdu specia animalului(ex:pisica): ");
+    printf("Introduceti specia animalului(ex:pisica): ");
     fgets(buffer, 100, stdin);
     buffer[strcspn(buffer, "\n")] = '\0';
     a.specie = (char*)malloc(strlen(buffer) + 1);
     strcpy(a.specie, buffer);
 
 
-    printf("Introdu varsta animalului: ");
+    printf("Introduceti varsta animalului: ");
     scanf("%d", &a.varsta);
 
 
-    printf("Introdu numarul de feluri de mancare(fiecare fel de mancare va avea pret): ");
+    printf("Introduceti numarul de feluri de mancare(fiecare fel de mancare va avea pret): ");
     scanf("%d", &a.nrFeluri);
 
 
